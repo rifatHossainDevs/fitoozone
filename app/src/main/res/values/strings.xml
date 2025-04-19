@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fitoozone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_text">FitooZone has workouts on demand that you\n can find based on how much time you have</string>
+    <string name="wellcome_text">Wellcome \n to Fitoozone</string>
+</resources>
