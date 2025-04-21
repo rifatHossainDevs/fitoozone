@@ -25,4 +25,11 @@
     <string name="we_sent_a_code_to_your_number">We sent a code to your number</string>
     <string name="_9_173_605_76_05">9(173)605-76-05   </string>
     <string name="change">Change</string>
+    <string name="resend">Resend</string>
+    <string name="don_t_receive_your_code">Don\'t receive your code?</string>
+    <string name="choose_gender">Choose gender</string>
+    <string name="woman">Woman</string>
+    <string name="gender_continue">Continue</string>
+    <string name="step_1_of_8">Step 1 of 8</string>
+    <string name="skip">Skip</string>
 </resources>

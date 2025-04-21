@@ -45,4 +45,9 @@
         android:name="com.epsports.fitoozone.GenderFragment"
         android:label="fragment_gender"
         tools:layout="@layout/fragment_gender" />
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.epsports.fitoozone.GoalFragment"
+        android:label="fragment_goal"
+        tools:layout="@layout/fragment_goal" />
 </navigation>
