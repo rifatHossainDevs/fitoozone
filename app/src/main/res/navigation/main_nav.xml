@@ -50,4 +50,19 @@
         android:name="com.epsports.fitoozone.GoalFragment"
         android:label="fragment_goal"
         tools:layout="@layout/fragment_goal" />
+    <fragment
+        android:id="@+id/birthDateFragment"
+        android:name="com.epsports.fitoozone.BirthDateFragment"
+        android:label="fragment_birth_date"
+        tools:layout="@layout/fragment_birth_date" />
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.epsports.fitoozone.HeightFragment"
+        android:label="fragment_height"
+        tools:layout="@layout/fragment_height" />
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.epsports.fitoozone.WeightFragment"
+        android:label="fragment_weight"
+        tools:layout="@layout/fragment_weight" />
 </navigation>
