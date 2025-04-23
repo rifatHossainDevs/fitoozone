@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F1FB"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TranningPlanFragment">
+
+    <TextView
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="We create your training plan"
+        android:textColor="#0A0615"
+        android:textSize="27sp" />
+    
+    <ImageView
+        android:layout_width="372dp"
+        android:layout_height="372dp"
+        android:src="@drawable/progress_bar"/>
+
+    <TextView
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/plan_text"
+        android:textColor="#0A0615"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/gender_continue"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

@@ -42,4 +42,19 @@
     <string name="step_3_of_8">step 3 of 8</string>
     <string name="select_height">Select height</string>
     <string name="select_birth_date">Select birth date</string>
+    <string name="kilogram">Kilogram</string>
+    <string name="pound">Pound</string>
+    <string name="select_weight">Select weight</string>
+    <string name="step_4_of_8">step 4 of 8</string>
+    <string name="kg">kg</string>
+    <string name="choose_training_level">Choose training level</string>
+    <string name="step_7_of_8">step 7 of 8</string>
+    <string name="step_8_of_8">step 8 of 8</string>
+    <string name="cardio">Cardio</string>
+    <string name="power_training">Power training</string>
+    <string name="stretch">Stretch</string>
+    <string name="dancing">Dancing</string>
+    <string name="yoga">Yoga</string>
+    <string name="choose_activities_that_interest">Choose activities that interest</string>
+    <string name="plan_text">We create a workout according\nto demographic profile, activity\nlevel and interests</string>
 </resources>

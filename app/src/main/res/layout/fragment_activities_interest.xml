@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".GoalFragment">
+    tools:context=".ActivitiesInterestFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -44,10 +44,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="@string/choose_main_goal"
+        android:gravity="center"
+        android:text="@string/choose_activities_that_interest"
         android:textColor="#0A0615"
         android:textSize="27sp" />
 
@@ -64,7 +65,7 @@
             android:layout_height="56dp"
             android:background="@drawable/gender_image_background"
             android:padding="4dp"
-            android:src="@drawable/loss_weight_image"
+            android:src="@drawable/cardio_image"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -73,9 +74,15 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Lose weight"
+            android:text="@string/cardio"
             android:textColor="#0A0615"
             android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp" />
 
     </LinearLayout>
 
@@ -91,8 +98,7 @@
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:background="@drawable/gender_image_background"
-            android:padding="4dp"
-            android:src="@drawable/keep_it_image"
+            android:src="@drawable/power_training_image"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -101,37 +107,15 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Keep fit"
+            android:text="@string/power_training"
             android:textColor="#0A0615"
             android:textSize="16sp" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:background="@drawable/shape_gender_gray"
-        android:orientation="horizontal"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:background="@drawable/gender_image_background"
-            android:padding="4dp"
-            android:src="@drawable/get_stronger_image"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:layout_width="230dp"
+        <RadioButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="Get stronger"
-            android:textColor="#0A0615"
-            android:textSize="16sp" />
+            android:layout_marginStart="16dp" />
 
     </LinearLayout>
 
@@ -147,8 +131,8 @@
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:background="@drawable/gender_image_background"
-            android:padding="16dp"
-            android:src="@drawable/gain_muscle_image"
+            android:padding="6dp"
+            android:src="@drawable/stretch_image"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -157,9 +141,82 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Gain muscle mass"
+            android:text="@string/stretch"
             android:textColor="#0A0615"
             android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_gender"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/gender_image_background"
+            android:padding="6dp"
+            android:src="@drawable/dancing_image"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/dancing"
+            android:textColor="#0A0615"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/shape_gender_gray"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/gender_image_background"
+            android:src="@drawable/yoga_image"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/yoga"
+            android:textColor="#0A0615"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp" />
 
     </LinearLayout>
 

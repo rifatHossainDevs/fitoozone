@@ -65,4 +65,24 @@
         android:name="com.epsports.fitoozone.WeightFragment"
         android:label="fragment_weight"
         tools:layout="@layout/fragment_weight" />
+    <fragment
+        android:id="@+id/goalWeightFragment"
+        android:name="com.epsports.fitoozone.GoalWeightFragment"
+        android:label="fragment_goal_weight"
+        tools:layout="@layout/fragment_goal_weight" />
+    <fragment
+        android:id="@+id/tranningLevelFragment"
+        android:name="com.epsports.fitoozone.TranningLevelFragment"
+        android:label="fragment_tranning_level"
+        tools:layout="@layout/fragment_tranning_level" />
+    <fragment
+        android:id="@+id/activitiesInterestFragment"
+        android:name="com.epsports.fitoozone.ActivitiesInterestFragment"
+        android:label="fragment_activities_interest"
+        tools:layout="@layout/fragment_activities_interest" />
+    <fragment
+        android:id="@+id/tranningPlanFragment"
+        android:name="com.epsports.fitoozone.TranningPlanFragment"
+        android:label="fragment_tranning_plan"
+        tools:layout="@layout/fragment_tranning_plan" />
 </navigation>
