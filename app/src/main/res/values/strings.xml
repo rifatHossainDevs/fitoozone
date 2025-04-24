@@ -57,4 +57,8 @@
     <string name="yoga">Yoga</string>
     <string name="choose_activities_that_interest">Choose activities that interest</string>
     <string name="plan_text">We create a workout according\nto demographic profile, activity\nlevel and interests</string>
+    <string name="hi_deborah">Hi, Deborah</string>
+    <string name="category">Category</string>
+    <string name="view_all">View All</string>
+    <string name="gym">Gym</string>
 </resources>

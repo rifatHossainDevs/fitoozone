@@ -85,4 +85,19 @@
         android:name="com.epsports.fitoozone.TranningPlanFragment"
         android:label="fragment_tranning_plan"
         tools:layout="@layout/fragment_tranning_plan" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.epsports.fitoozone.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/tranningFragment"
+        android:name="com.epsports.fitoozone.TranningFragment"
+        android:label="fragment_tranning"
+        tools:layout="@layout/fragment_tranning" />
+    <fragment
+        android:id="@+id/tranning2Fragment"
+        android:name="com.epsports.fitoozone.Tranning2Fragment"
+        android:label="fragment_tranning2"
+        tools:layout="@layout/fragment_tranning2" />
 </navigation>
