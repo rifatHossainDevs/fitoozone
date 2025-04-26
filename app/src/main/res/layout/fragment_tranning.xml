@@ -1,14 +1,576 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TranningFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tv_trainings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/trainings"
+        android:textColor="#0A0615"
+        android:textSize="27sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="794dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_trainings">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_text_view_gray"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Clear All"
+                android:textColor="#404B52"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Beginner"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/shape_gender_light"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Beginner"
+                android:textColor="#404B52"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/shape_gender_light"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Beginner"
+                android:textColor="#404B52"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/shape_text_view_gray"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Beginner"
+                android:textColor="#404B52"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="181dp"
+                android:layout_height="168dp">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_bacground_for_home_fragment"
+                    android:padding="40dp"
+                    android:src="@drawable/image_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_favorite_24"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image"
+                    app:layout_constraintTop_toTopOf="@id/iv_image" />
+
+
+                <TextView
+                    android:id="@+id/tv_workout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Core Control"
+                    android:textColor="#0A0615"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image" />
+
+                <TextView
+                    android:id="@+id/tv_workout_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Beginner"
+                    android:textColor="#461B93"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_workout_name" />
+
+                <ImageView
+                    android:id="@+id/iv_dot"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/image_dot"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_workout_level"
+                    app:layout_constraintStart_toEndOf="@id/tv_workout_level"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level" />
+
+                <TextView
+                    android:id="@+id/tv_workout_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="32 min"
+                    android:textColor="#404B52"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_dot"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginStart="16dp"
+                android:layout_width="181dp"
+                android:layout_height="168dp">
+
+                <ImageView
+                    android:id="@+id/iv_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_bacground_for_home_fragment"
+                    android:padding="40dp"
+                    android:src="@drawable/image_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_favorite_24"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image2"
+                    app:layout_constraintTop_toTopOf="@id/iv_image2" />
+
+
+                <TextView
+                    android:id="@+id/tv_workout_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Core Control"
+                    android:textColor="#0A0615"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image2" />
+
+                <TextView
+                    android:id="@+id/tv_workout_level2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Beginner"
+                    android:textColor="#461B93"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_workout_name2" />
+
+                <ImageView
+                    android:id="@+id/iv_dot2"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/image_dot"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_workout_level2"
+                    app:layout_constraintStart_toEndOf="@id/tv_workout_level2"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level2" />
+
+                <TextView
+                    android:id="@+id/tv_workout_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="32 min"
+                    android:textColor="#404B52"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_dot2"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="181dp"
+                android:layout_height="168dp">
+
+                <ImageView
+                    android:id="@+id/iv_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_bacground_for_home_fragment"
+                    android:padding="40dp"
+                    android:src="@drawable/image_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_favorite_24"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image3"
+                    app:layout_constraintTop_toTopOf="@id/iv_image3" />
+
+
+                <TextView
+                    android:id="@+id/tv_workout_name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Core Control"
+                    android:textColor="#0A0615"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image3" />
+
+                <TextView
+                    android:id="@+id/tv_workout_level3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Beginner"
+                    android:textColor="#461B93"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_workout_name3" />
+
+                <ImageView
+                    android:id="@+id/iv_dot"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/image_dot"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_workout_level3"
+                    app:layout_constraintStart_toEndOf="@id/tv_workout_level3"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level3" />
+
+                <TextView
+                    android:id="@+id/tv_workout_time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="32 min"
+                    android:textColor="#404B52"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_dot"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginStart="16dp"
+                android:layout_width="181dp"
+                android:layout_height="168dp">
+
+                <ImageView
+                    android:id="@+id/iv_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_bacground_for_home_fragment"
+                    android:padding="40dp"
+                    android:src="@drawable/image_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_favorite_24"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image4"
+                    app:layout_constraintTop_toTopOf="@id/iv_image4" />
+
+
+                <TextView
+                    android:id="@+id/tv_workout_name4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Core Control"
+                    android:textColor="#0A0615"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image4" />
+
+                <TextView
+                    android:id="@+id/tv_workout_level4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Beginner"
+                    android:textColor="#461B93"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_workout_name4" />
+
+                <ImageView
+                    android:id="@+id/iv_dot4"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/image_dot"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_workout_level4"
+                    app:layout_constraintStart_toEndOf="@id/tv_workout_level4"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level4" />
+
+                <TextView
+                    android:id="@+id/tv_workout_time4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="32 min"
+                    android:textColor="#404B52"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_dot4"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="181dp"
+                android:layout_height="168dp">
+
+                <ImageView
+                    android:id="@+id/iv_image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_bacground_for_home_fragment"
+                    android:padding="40dp"
+                    android:src="@drawable/image_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_favorite_24"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image5"
+                    app:layout_constraintTop_toTopOf="@id/iv_image5" />
+
+
+                <TextView
+                    android:id="@+id/tv_workout_name5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Core Control"
+                    android:textColor="#0A0615"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image5" />
+
+                <TextView
+                    android:id="@+id/tv_workout_level5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Beginner"
+                    android:textColor="#461B93"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_workout_name5" />
+
+                <ImageView
+                    android:id="@+id/iv_dot5"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/image_dot"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_workout_level5"
+                    app:layout_constraintStart_toEndOf="@id/tv_workout_level5"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level5" />
+
+                <TextView
+                    android:id="@+id/tv_workout_time5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="32 min"
+                    android:textColor="#404B52"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_dot5"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginStart="16dp"
+                android:layout_width="181dp"
+                android:layout_height="168dp">
+
+                <ImageView
+                    android:id="@+id/iv_image6"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_bacground_for_home_fragment"
+                    android:padding="40dp"
+                    android:src="@drawable/image_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_favorite_24"
+                    app:layout_constraintEnd_toEndOf="@id/iv_image6"
+                    app:layout_constraintTop_toTopOf="@id/iv_image6" />
+
+
+                <TextView
+                    android:id="@+id/tv_workout_name6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Core Control"
+                    android:textColor="#0A0615"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_image6" />
+
+                <TextView
+                    android:id="@+id/tv_workout_level6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Beginner"
+                    android:textColor="#461B93"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_workout_name6" />
+
+                <ImageView
+                    android:id="@+id/iv_dot6"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/image_dot"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_workout_level6"
+                    app:layout_constraintStart_toEndOf="@id/tv_workout_level6"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level6" />
+
+                <TextView
+                    android:id="@+id/tv_workout_time6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="32 min"
+                    android:textColor="#404B52"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/iv_dot6"
+                    app:layout_constraintTop_toTopOf="@id/tv_workout_level6" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/app_bottom_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
