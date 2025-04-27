@@ -100,4 +100,19 @@
         android:name="com.epsports.fitoozone.Tranning2Fragment"
         android:label="fragment_tranning2"
         tools:layout="@layout/fragment_tranning2" />
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.epsports.fitoozone.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.epsports.fitoozone.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/profilePremierFragment"
+        android:name="com.epsports.fitoozone.ProfilePremierFragment"
+        android:label="fragment_profile_premier"
+        tools:layout="@layout/fragment_profile_premier" />
 </navigation>
