@@ -115,4 +115,29 @@
         android:name="com.epsports.fitoozone.ProfilePremierFragment"
         android:label="fragment_profile_premier"
         tools:layout="@layout/fragment_profile_premier" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.epsports.fitoozone.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.epsports.fitoozone.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/allExerciseFragment"
+        android:name="com.epsports.fitoozone.AllExerciseFragment"
+        android:label="fragment_all_exercise"
+        tools:layout="@layout/fragment_all_exercise" />
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.epsports.fitoozone.WorkoutFragment"
+        android:label="fragment_workout"
+        tools:layout="@layout/fragment_workout" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.epsports.fitoozone.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
 </navigation>
