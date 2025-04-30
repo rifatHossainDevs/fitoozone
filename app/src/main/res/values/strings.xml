@@ -63,4 +63,6 @@
     <string name="gym">Gym</string>
     <string name="home">Home</string>
     <string name="trainings">Trainings</string>
+    <string name="show_filter">Show Filter</string>
+    <string name="filters">Filters</string>
 </resources>
