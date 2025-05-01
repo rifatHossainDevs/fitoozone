@@ -140,4 +140,9 @@
         android:name="com.epsports.fitoozone.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/exersiceInfoFragment"
+        android:name="com.epsports.fitoozone.ExersiceInfoFragment"
+        android:label="fragment_exersice_info"
+        tools:layout="@layout/fragment_exersice_info" />
 </navigation>
