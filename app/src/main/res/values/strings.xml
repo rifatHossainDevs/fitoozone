@@ -66,4 +66,8 @@
     <string name="show_filter">Show Filter</string>
     <string name="filters">Filters</string>
     <string name="Resistance_training">Resistance training, also known as strength training, is an essential component of any fitness routine, especially for your upper body</string>
+    <string name="personal_trainings">Personal Trainings</string>
+    <string name="_2_workouts">2 workouts</string>
+    <string name="_13_workouts">13 workouts</string>
+    <string name="_16_workouts">16 workouts</string>
 </resources>
