@@ -196,7 +196,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="174dp"
+                        android:layout_marginStart="144dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
@@ -225,7 +225,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="174dp"
+                        android:layout_marginStart="144dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
@@ -254,7 +254,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="174dp"
+                        android:layout_marginStart="144dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
@@ -284,7 +284,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="174dp"
+                        android:layout_marginStart="144dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
@@ -334,7 +334,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="180dp"
+                        android:layout_marginStart="150dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
@@ -363,7 +363,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="180dp"
+                        android:layout_marginStart="150dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
@@ -427,7 +427,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:layout_marginStart="180dp"
+                        android:layout_marginStart="150dp"
                         android:src="@drawable/arrow" />
 
                 </LinearLayout>
